@@ -14,7 +14,7 @@ class Ingredients extends Component {
   componentDidMount = () => {
     axios
       .get(
-        `http://api.yummly.com/v1/api/recipe/${
+        `https://api.yummly.com/v1/api/recipe/${
           this.props.match.params.id
         }?_app_id=108507b6&_app_key=dc94d5f4c0691f5dc5db17fb6deb0ca4`
       )
