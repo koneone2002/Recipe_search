@@ -5,7 +5,7 @@ const Context = React.createContext();
 
 const reducer = (state, action) => {
   switch (action.type) {
-    case 'SEARCH_RECIPIES':
+    case 'SEARCH_RECIPES':
       return {
         ...state,
         recipes_list: action.payload,

@@ -21,7 +21,7 @@ class Search extends Component {
       )
       .then(res => {
         dispatch({
-          type: 'SEARCH_RECIPIES',
+          type: 'SEARCH_RECIPES',
           payload: res.data.matches
         });
         //console.log(res.data);
@@ -41,7 +41,7 @@ class Search extends Component {
                 <i className='fas fa-bacon' /> Search For a Recipe
               </h1>
               <p className='lead text-center'>
-                Get recipies for your favorite ingredients
+                Get recipes for your favorite ingredients
               </p>
               <form onSubmit={this.findRecipe.bind(this, dispatch)}>
                 <div className='form-group'>
@@ -58,7 +58,7 @@ class Search extends Component {
                   className='btn btn-primary btn-lg btn-block mb-5'
                   type='submit'
                 >
-                  Get Ingredient Recipies
+                  Get Ingredient Recipes
                 </button>
               </form>
             </div>
